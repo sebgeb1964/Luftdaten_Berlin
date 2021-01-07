@@ -1,0 +1,111 @@
+{
+  "id" : "d22448af-36c2-48a6-b95e-6564125c8a20",
+  "type" : "Observation-Collection",
+  "href" : "https://cdc.dwd.de/portal/shortlink/d22448af-36c2-48a6-b95e-6564125c8a20",
+  "member" : [ {
+    "id" : "RS_IND_MN008",
+    "type" : "Observation",
+    "phenomenonTime" : {
+      "timePeriod" : {
+        "beginPosition" : "2019-01-06",
+        "endPosition" : "2021-01-06"
+      }
+    },
+    "procedure" : {
+      "id" : "RS_IND_MN008",
+      "uuid" : "432300242446",
+      "href" : "urn:x-wmo:md:de.dwd.cdc::RS_IND_MN008",
+      "title" : "Hourly station observations of index whether precipitation has fallen",
+      "uom" : "numerical code"
+    },
+    "featureOfInterest" : {
+      "type" : "DataArray",
+      "count" : 1,
+      "record" : {
+        "encoding" : {
+          "blockSeparator" : "newline",
+          "tokenSeparator" : ",",
+          "tokenEnclosing" : "\"",
+          "decimalSign" : "."
+        },
+        "fields" : [ {
+          "ix" : 1,
+          "name" : "SDO_ID",
+          "type" : "string"
+        }, {
+          "ix" : 2,
+          "name" : "SDO_Name",
+          "type" : "string"
+        }, {
+          "ix" : 3,
+          "name" : "Geogr_Laenge",
+          "type" : "double"
+        }, {
+          "ix" : 4,
+          "name" : "Geogr_Breite",
+          "type" : "double"
+        }, {
+          "ix" : 5,
+          "name" : "Hoehe_ueber_NN",
+          "type" : "double"
+        }, {
+          "ix" : 6,
+          "name" : "Metadata_Link",
+          "type" : "string"
+        } ]
+      },
+      "values" : {
+        "href" : "data/sdo_RS_IND_MN008.csv"
+      }
+    },
+    "result" : {
+      "type" : "DataArray",
+      "count" : 17530,
+      "record" : {
+        "fields" : [ {
+          "ix" : 1,
+          "name" : "Produkt_Code",
+          "type" : "string",
+          "description" : "reference to procedure.id"
+        }, {
+          "ix" : 2,
+          "name" : "SDO_ID",
+          "type" : "string",
+          "description" : "reference to featureOfInterest.id"
+        }, {
+          "ix" : 3,
+          "name" : "Zeitstempel",
+          "type" : "datetime",
+          "uom" : {
+            "href" : "http://www.opengis.net/def/uom/ISO-8601/0/Gregorian",
+            "title" : ""
+          }
+        }, {
+          "ix" : 4,
+          "name" : "Wert",
+          "type" : "double",
+          "description" : "value of the procedure at specified point in time in the procuedure.uom"
+        }, {
+          "ix" : 5,
+          "name" : "Qualitaet_Niveau",
+          "type" : "string",
+          "uom" : {
+            "href" : "https://cdc.dwd.de/skos/taxon/qs/Qualitaetsniveau",
+            "title" : ""
+          }
+        }, {
+          "ix" : 6,
+          "name" : "Qualitaet_Byte",
+          "type" : "string",
+          "uom" : {
+            "href" : "https://cdc.dwd.de/skos/taxon/qs/Qualitaetsbyte",
+            "title" : ""
+          }
+        } ]
+      },
+      "values" : {
+        "href" : "data/data_RS_IND_MN008.csv"
+      }
+    }
+  } ]
+}
